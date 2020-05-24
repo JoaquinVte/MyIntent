@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">myIntent</string>
+    <string name="textViewSolicitudNombre">Hola!, ¿Como te llamas?</string>
+</resources>

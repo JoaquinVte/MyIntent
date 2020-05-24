@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34B2EC"
+    tools:context=".HubActivity">
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <ImageButton
+        android:id="@+id/navegarButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toStartOf="@+id/alarmaButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_info" />
+
+    <ImageButton
+        android:id="@+id/fotoButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/alarmaButton"
+        app:layout_constraintTop_toTopOf="@+id/smsButton"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <ImageButton
+        android:id="@+id/mapaButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/fotoButton"
+        app:layout_constraintTop_toTopOf="@+id/llamadaButton"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageButton
+        android:id="@+id/smsButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/fotoButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/navegarButton"
+        app:layout_constraintTop_toBottomOf="@+id/navegarButton"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/llamadaButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/mapaButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/smsButton"
+        app:layout_constraintTop_toBottomOf="@+id/smsButton"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+    <ImageButton
+        android:id="@+id/mandarButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="@+id/llamadaButton"
+        app:layout_constraintTop_toBottomOf="@+id/llamadaButton"
+        app:srcCompat="@android:drawable/sym_action_email" />
+
+    <ImageButton
+        android:id="@+id/alarmaButton"
+        android:layout_width="@dimen/imageButton"
+        android:layout_height="@dimen/imageButton"
+        android:layout_marginEnd="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/navegarButton"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
+
+    <EditText
+        android:id="@+id/mandarEditText"
+        android:layout_width="176dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Txt a mandar ..."
+        app:layout_constraintBottom_toBottomOf="@+id/mandarButton"
+        app:layout_constraintEnd_toEndOf="@+id/mapaButton"
+        app:layout_constraintStart_toStartOf="@+id/mapaButton"
+        app:layout_constraintTop_toTopOf="@+id/mandarButton"
+        app:layout_constraintVertical_bias="0.54" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
